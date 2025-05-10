@@ -3,13 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "node server.js",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "npm run build && npm run serve"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^42.0.1",
+    "@ckeditor/ckeditor5-vue": "^6.0.0",
+    "@splidejs/vue-splide": "^0.6.12",
+    "@tinymce/tinymce-vue": "^6.0.1",
+    "@vue/server-renderer": "^3.5.13",
+    "@vueup/vue-quill": "^1.2.0",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "filepond": "^4.31.1",
+    "filepond-plugin-file-validate-type": "^1.2.9",
+    "filepond-plugin-image-exif-orientation": "^1.0.11",
+    "filepond-plugin-image-preview": "^4.6.12",
+    "firebase": "^10.12.3",
+    "prerender-node": "^3.8.0",
+    "quill": "^2.0.2",
+    "swiper": "^11.2.6",
+    "tinymce": "^7.2.1",
+    "vue": "^3.2.13",
+    "vue-filepond": "^7.0.4",
+    "vue-meta": "^2.4.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^4.4.0",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -18,7 +39,8 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "prerender-spa-plugin": "^3.4.0"
   },
   "eslintConfig": {
     "root": true,
